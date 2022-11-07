@@ -13,7 +13,7 @@ body {
 header {
   padding: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 .search {
