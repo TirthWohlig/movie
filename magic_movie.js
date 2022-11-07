@@ -1,4 +1,16 @@
+// SEARCH BAR 
+function show() {
+    document.getElementById("src").style.display = "block",
+        document.getElementById("x").style.display = "block",
+        document.getElementById("bar").style.display = "none"
+};
+function hide() {
+        location.reload();
 
+};
+// SEARCH BAR 
+
+// API 
 const API_KEY = "api_key=593b7a4fdb5c248ba602cff028aa98e3";
 const BASE_URL = "https://api.themoviedb.org/3";
 const API_URL = BASE_URL + "/discover/movie/?certification_country=US&certification=Rsort_by=vote_average.desc&" + API_KEY;
@@ -37,8 +49,8 @@ function showMovies(data) {
             </div>
 `
             main.appendChild(movieEl);
-        })
-}
+        });
+};
 
 function getColor(vote) {
     if (vote >= 8) {
@@ -48,7 +60,7 @@ function getColor(vote) {
     } else {
         return 'red'
     }
-}
+};
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -57,86 +69,5 @@ form.addEventListener("submit", (e) => {
     if (searchTerm) {
         getMovies(SEARCH_URL + "&query=" + searchTerm)
     }
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function show() {
-    document.getElementById("src").style.display = "block",
-        document.getElementById("x").style.display = "block",
-        document.getElementById("bar").style.display = "none"
-};
-function hide() {
-        location.reload();
-
-};
-
+});
+// API
