@@ -4,13 +4,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-:root {
-  --primary-color: #ef3f37;
-  --secondary-color: #262161;
-  --border-color: #fbaf41;
-}
 body {
-  background-color: var(--secondary-color);
+  background-color: #F4EEFF;
   margin: 0;
   color: #f0eee0;
 }
@@ -22,32 +17,33 @@ header {
 }
 
 .search {
-  color: #ef4037c7;
+  color: #121313;
   font-size: 30px;
   margin-right: 26px;
 }
 .close {
-  color: #ef4037c7;
+  color: #121313;
   font-size: 30px;
   margin-right: 26px;
   display: none;
 }
 #src {
-  background-color: #ef403783;
+  background-color: #A6B1E1;
   font-size: 1rem;
-  border: 2px solid #fbaf41;
-  border-radius: 6px;
+  border: none;
+  border-radius: 4px;
   width: 250px;
+  height: 35px;
   margin-right: 2px;
   display: none;
 }
 
 #src:focus {
   outline: none;
-  color: #fff;
+  color: #424874;
 }
 #src::placeholder {
-  color: #f0eee0;
+  color: #424874;
 }
 
 main {
@@ -59,8 +55,14 @@ main {
 .movie {
   width: 300px;
   margin: 1rem;
+  border-radius: 6px;
+  box-shadow: 10px 10px 66px -28px rgba(5,5,5,1);
+  text-align: center;
+  background: #DCD6F7 ;
+  color: #000;
 }
 
 .movie img {
   width: 100%;
+  border-radius: 6px;
 }
