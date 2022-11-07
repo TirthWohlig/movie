@@ -1,14 +1,4 @@
-// SEARCH BAR 
-function show() {
-    document.getElementById("src").style.display = "block",
-        document.getElementById("x").style.display = "block",
-        document.getElementById("bar").style.display = "none"
-};
-function hide() {
-        location.reload();
 
-};
-// SEARCH BAR 
 
 // API 
 const API_KEY = "api_key=593b7a4fdb5c248ba602cff028aa98e3";
@@ -68,6 +58,9 @@ form.addEventListener("submit", (e) => {
 
     if (searchTerm) {
         getMovies(SEARCH_URL + "&query=" + searchTerm)
+    } else {
+        getMovies(API_URL);
     }
+
 });
 // API
