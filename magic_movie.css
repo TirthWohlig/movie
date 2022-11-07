@@ -5,15 +5,15 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #F4EEFF;
+  background-color: #f4eeff;
   margin: 0;
-  color: #f0eee0;
+  color: #000;
 }
 
 header {
   padding: 1rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 
 .search {
@@ -28,7 +28,7 @@ header {
   display: none;
 }
 #src {
-  background-color: #A6B1E1;
+  background-color: #a6b1e1;
   font-size: 1rem;
   border: none;
   border-radius: 4px;
@@ -56,13 +56,66 @@ main {
   width: 300px;
   margin: 1rem;
   border-radius: 6px;
-  box-shadow: 10px 10px 66px -28px rgba(5,5,5,1);
-  text-align: center;
-  background: #DCD6F7 ;
-  color: #000;
+  box-shadow: 10px 10px 66px -28px rgba(5, 5, 5, 1);
+  background: #e6e6fa;
+  position: relative;
+  overflow: hidden;
 }
 
 .movie img {
   width: 100%;
   border-radius: 6px;
 }
+
+.movie-info {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: #f4eeff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: #4de44d;
+}
+.movie-info span.orange {
+  color: #ffbf49;
+}
+.movie-info span.red {
+  color: #ff5252;
+}
+
+.overview {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #e6e6fa;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.9s ease-in-out;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.home {
+  color: #121313;
+  font-size: 30px;
+  padding: 1px 0 0 10px;
+}
+ 

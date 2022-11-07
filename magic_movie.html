@@ -14,15 +14,15 @@
 <body>
     <div id="app">
         <header>
-            <form>
+            <div class="home"><i class="fa-solid fa-house" id="home" ondblclick="relod()"></i></div>
+            <form id="form">
                 <input type="text" name="" id="src" placeholder="Search...">
             </form>
             <i class="fa-solid fa-magnifying-glass search" id="bar" onclick="show()"></i>
-            &nbsp;&nbsp;&nbsp;&nbsp;
             <i class="fa-solid fa-x close" id="x" onclick="hide()"></i>
         </header>
         <main id="main">
-            <div class="movie">
+            <div class="movie"> 
                 <img src="/images/thumbnail.png" alt="images">
 
                 <div class="movie-info">
@@ -30,6 +30,7 @@
                     <span class="green">9.8</span>
                 </div>
                 <div class="overview">
+                    <h3>overview</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolores nesciunt nemo molestias
                     voluptatem mollitia.
                 </div>
